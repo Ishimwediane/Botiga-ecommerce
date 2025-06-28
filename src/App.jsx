@@ -9,7 +9,7 @@ import './App.css'
 import { BrowserRouter,Route,Routes} from 'react-router-dom'
 import Register from './components/Register'
 import Homepage from './components/Homepage'
-import Singlepage from './components/SinglePage'
+import SinglePage from './components/SinglePage'
 
 
 
@@ -28,7 +28,7 @@ function App() {
     <Route path='/register' index element={<Register />} />
     
     <Route path='/view' element={<Homepage />}></Route>
-    <Route path='/singlecard/:id' element={<Singlepage/>}/>
+    <Route path='/singlecard/:id' element={<SinglePage/>}/>
     </Route>
    </Routes>
   </BrowserRouter>
