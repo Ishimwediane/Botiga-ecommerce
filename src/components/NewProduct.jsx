@@ -3,7 +3,7 @@ import product1 from "../assets/image/product1.webp";
 import product2 from "../assets/image/product2.webp";
 import product3 from "../assets/image/product3.webp";
 import { FaStar } from "react-icons/fa";
-import SinglePage from "./SinglePage";
+import SinglePage from "./Singlepage";
 import "../styles/Product.css"; // Ongera ho style niba ari ngombwa
 
 const rankingColors = {

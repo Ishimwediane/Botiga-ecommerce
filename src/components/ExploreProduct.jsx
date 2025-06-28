@@ -5,7 +5,7 @@ import product3 from '../assets/image/product3.webp';
 import product4 from '../assets/image/product4.webp';
 import product5 from '../assets/image/product5.webp';
 import product6 from '../assets/image/product6.webp';
-import SinglePage from "./SinglePage";
+import SinglePage from "./Singlepage";
 
 import { FaStar } from "react-icons/fa";
 

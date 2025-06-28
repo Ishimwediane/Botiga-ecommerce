@@ -9,7 +9,7 @@ import product7 from '../assets/image/product7.webp';
 import product8 from '../assets/image/product8.webp';
 import product9 from '../assets/image/product9.webp';
 import { FaStar } from "react-icons/fa";
-import SinglePage from './SinglePage';
+import SinglePage from './Singlepage';
 
 import "@fontsource/inter"; 
 import "@fontsource/inter/700.css"; 
