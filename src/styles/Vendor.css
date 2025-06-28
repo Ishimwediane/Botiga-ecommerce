@@ -1,0 +1,331 @@
+.gallery-store {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
+    margin-right: 110px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+.store-item {
+    position: relative;
+    width: 350px;  
+    height: 330px; 
+     
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(201, 198, 198, 0.945); 
+}
+
+.store-item img {
+    width: 100%;
+    height: 250px;
+    
+    filter: brightness(40%);  
+}
+
+.store-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(250, 247, 247, 0.4); 
+}
+
+.vendor-text {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.vendors-location {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    color: white;
+    font-size: 14px;
+    z-index: 2;
+    line-height: 25px;
+}
+
+.star-rating {
+    position: absolute;
+    top: 97px;
+    left: 20px;
+    z-index: 2;
+}
+
+.star-rating .star {
+    font-size: 18px;
+    color: gray;  /* Default gray */
+}
+
+.star-rating .star.filled {
+    color: orange;  /* Yellow for filled stars */
+}
+
+.vendor-profile {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.vendor-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.action-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    transform: translateX(-50%);
+    background-color: #5a67dd;
+    color: rgb(253, 251, 251);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0px 2px 4px rgba(247, 244, 244, 0.2);
+    cursor: pointer;
+}
+.store-container{
+    margin: 50px 130px 20px 130px;
+}
+.store-container h2{
+    font-size: 46px;
+    color: rgb(43, 42, 42);
+}
+
+.store-tile{
+    width: 1050px;  
+    height: 50px;
+    background: white; 
+    border-radius: 1px; 
+    
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   
+    margin-left: 10px;
+
+
+    padding: 20px 20px;
+   
+}
+.store-tile {
+    width: 100%;
+    max-width: 1050px;  
+    height: auto;  /* Adjust height to fit content */
+    background: white; 
+    border-radius: 1px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Span - displaying total stores */
+.store-tile span {
+    margin-top: 0; /* Remove extra top margin */
+}
+
+/* Filter Button */
+.filter-btn {
+    padding: 10px 20px;
+    width: auto;
+    color: white;
+    background-color: rgb(84, 84, 236);
+    border: none;
+    border-radius: 4px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+/* Sort by section */
+.most-store {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+/* Recent button */
+.recent-btn {
+    height: 40px; /* Adjust size */
+    padding: 0 20px;
+    background-color: white;
+    border: 1px solid rgb(236, 236, 236);
+    margin-left: 10px;
+    font-size: 14px; /* Adjust font size */
+}
+
+/* Store menu grid - icons */
+.store-menugrid {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto; /* Align to the right */
+}
+
+.store-menugrid svg {
+    font-size: 20px;
+}
+.filter-recentside{
+    display: flex;
+    margin-left: 550px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .store-tile {
+        flex-direction: column;  /* Stack elements vertically */
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .filter-btn {
+        width: 100px;  /* Button takes full width */
+        margin-top: 10px;
+    }
+    .filter-recentside{
+       
+        margin-left: 0px;
+    }
+    .most-store {
+        margin-top: 10px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .recent-btn {
+        margin-top: 10px;
+        width: 100%;  /* Button takes full width */
+    }
+
+    .store-menugrid {
+        margin-top: 10px;
+        justify-content: flex-start; /* Align icons to the left */
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .store-tile {
+        padding: 10px;
+    }
+
+    .filter-btn {
+        width: 100px;  /* Button takes full width */
+        margin-top: 10px;
+    }
+    .filter-recentside{
+       
+        margin-left: 0px;
+    }
+    .recent-btn {
+        height: 35px;  /* Adjust button height */
+        font-size: 12px;  /* Adjust font size */
+    }
+
+    .store-menugrid svg {
+        font-size: 18px;  /* Adjust icon size */
+    }
+}
+
+@media (max-width: 1024px) {
+    .gallery-store {
+        grid-template-columns: 1fr; /* One image per row */
+        gap: 30px; /* Adjust spacing */
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .store-item {
+        width: 100%; /* Full width */
+        max-width: 600px; /* Limit max width */
+        margin: 0 auto; /* Center alignment */
+    }
+
+    .store-container {
+        margin: 40px 50px 20px 50px;
+    }
+
+    .store-tile {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .filter-btn, .most-store, .store-menugrid {
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+    }
+    .filter-btn {
+        width: 100px;  /* Button takes full width */
+        margin-top: 10px;
+    }
+    .filter-recentside{
+       
+        margin-left: 0px;
+    }
+}
+
+/* Small screens (Mobile: up to 767px) */
+@media (max-width: 767px) {
+    .gallery-store {
+        grid-template-columns: 1fr; /* One image per row */
+        gap: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .store-item {
+        width: 100%; /* Full width */
+        max-width: 400px; /* Limit max width */
+        margin: 0 auto;
+    }
+
+    .store-container {
+        margin: 30px 20px 20px 20px;
+    }
+
+    .store-container h2 {
+        font-size: 36px; /* Adjust font size */
+    }
+
+    .store-tile {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .filter-btn, .most-store, .store-menugrid {
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+    }
+
+    .recent-btn {
+        width: 100px;
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,111 @@
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 900px;
+    
+    margin-top: 70px;
+    margin-left: 130px;
+    margin-bottom: 130px;
+    margin-right: 120px;
+  }
+  
+  .form-section {
+    width: 50%;
+    line-height: 60px;
+  }
+  .form-section label{
+    font-weight: bold;
+  }
+  
+  .form-section h2, .info-section h2 {
+    font-size: 32px;
+  }
+  
+  .name-fields {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  textarea {
+    width: 100%;
+    height: 300px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-section button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .info-section {
+    width: 40%;
+    
+  }
+  @media (min-width: 768px) {
+    .form-section {
+      width: 55%;
+    }
+    .info-section {
+      width: 40%;
+    }
+  }
+  
+  .form-section h2, .info-section h2 {
+    font-size: 1.5em;
+  }
+  
+  .name-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .name-fields input {
+    flex: 1;
+    min-width: 120px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+ .form-section button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+    }
+    .name-fields {
+      flex-direction: column;
+    }
+  }
+  

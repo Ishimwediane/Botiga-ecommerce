@@ -1,0 +1,150 @@
+.footer {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding: 40px 130px;
+    font-family:  sans-serif;
+  }
+  
+  .footer-container {
+    display: grid;
+   grid-template-columns: 500px 400px ;
+    gap: 150px;
+    margin-top: 90px;
+  }
+  
+  .newsletter h2,
+  
+  .contact h2,
+  .links h3
+  {
+    
+    font-weight: bold;
+    font-size: 22px;
+  color: rgba(255, 255, 255, 0.884);
+  }
+ 
+  .subscribe {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    margin-top: 50px;
+  }
+  .contact p{
+    color: rgba(255, 255, 255, 0.884);
+    line-height: 23px;
+  }
+  .newsletter p{
+    color: rgba(255, 255, 255, 0.884);
+  }
+  
+  .subscribe input {
+    flex: 1;
+    background: none;
+    border: none;
+    color: white;
+    padding: 5px;
+    
+  }
+  
+  .subscribe button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .footer-icons{
+    display: flex;
+    gap: 30px;
+  
+  }
+ 
+  .links{
+    
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+    line-height: 23px;
+  }
+  
+  .links li {
+    color: rgb(153, 151, 151);
+    
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Footer Styles */
+@media (max-width: 1024px) {
+  .footer-container {
+      grid-template-columns: 1fr; /* Stack sections vertically */
+      gap: 50px;
+      text-align: left;
+  }
+
+  .links {
+      grid-template-columns: repeat(2, 1fr); /* Reduce columns */
+      justify-content: left;
+      gap: 20px;
+  }
+
+  .subscribe {
+      justify-content: left;
+  }
+
+  .footer-icons {
+      justify-content: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+      padding: 40px 50px; /* Reduce padding */
+  }
+
+  .footer-container {
+      text-align: left;
+  }
+
+  .links {
+      grid-template-columns: 1fr; /* Stack links in one column */
+  }
+
+  .subscribe {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .subscribe input {
+      width: 100%;
+      text-align: left;
+  }
+
+  .footer-icons {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      padding: 30px 20px;
+  }
+
+  .links {
+      grid-template-columns: 1fr; /* Single column */
+  }
+
+  .subscribe {
+      flex-direction: column;
+      align-items: left;
+  }
+
+  .subscribe input {
+      width: 100%;
+  }
+}
