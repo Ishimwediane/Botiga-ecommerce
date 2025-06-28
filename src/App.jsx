@@ -9,7 +9,7 @@ import './App.css'
 import { BrowserRouter,Route,Routes} from 'react-router-dom'
 import Register from './components/Register'
 import Homepage from './components/Homepage'
-import Singlepage from './components/Singlepage'
+import Singlepage from './components/SinglePage'
 
 
 
